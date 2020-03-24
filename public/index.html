@@ -4,28 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
-    <script src="./js/script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Nodemailer</title>
 </head>
 <body>
     <section class="nav">
         <div class="topnav" id="myTopnav">
-            <a href="#home" >Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
+            <a href="#" class="navbar-brand">Known</a>
+            <a href="#home" >Главная</a>
+            <a href="#feature">Гарантии</a>
+            <a href="#about">О нас</a>
+            <a href="#contact">Контакты</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
     </section>
+    <!-----------------------------------------------Slider------------------------------------------------------------------------->
+    <section id="home">
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide img1">
+                    
+                    <img src="https://picsum.photos/1280/720?random=1" alt="slide image" >
+                    <span id="mountin">Путешествия в горы</span>
+                </div>
+                <div class="slide img2">
+                    <span id="europe">Путешествия в по Европе</span>
+                    <img src="https://picsum.photos/1280/720?random=2" alt="slide image" >
+                    
+                </div>
+                <div class="slide img3">
+                    <img src="https://picsum.photos/1280/720?random=3" alt="slide image" >
+                    <span id="azia">Путешествия в по Азии</span>
+                </div>
+            </div>
+            <div class="controls">
+              <div class="control prev-slide">&#9668;</div>
+              <div class="control next-slide">&#9658;</div>
+            </div>
+          </div>
+    </section>
+    <!-----------------------------------------------Slider------------------------------------------------------------------------->
 
+    <!-- FEATURE -->
+    <section id="feature">
+        <div class="container">
+                  <div class="content">
+                       <div class="feature-thumb">
+                            <span>01</span>
+                            <h3>Trending Courses</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing eiusmod tempor incididunt ut labore et dolore magna.</p>
+                       </div>
+                       <div class="feature-thumb">
+                            <span>02</span>
+                            <h3>Books & Library</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing eiusmod tempor incididunt ut labore et dolore magna.</p>
+                       </div>
+                       <div class="feature-thumb">
+                            <span>03</span>
+                            <h3>Certified Teachers</h3>
+                            <p>templatemo delivers a wide variety of HTML5 templates for you at absolutely no charge. Please tell your friends.</p>
+                       </div>
+                    </div>  
+        </div>
+   </section>
 
-  
+    <!------------------------------------------------------------------------------------------------------------------------------>
+   <section class="section-form" id="contact">
+       <form action="/contact" id="contact-form" method="post" role="form">
+        <fieldset>
+            <div class="intro">
+                <h1> Ready to go? </h1>
+                <h2> Get your project started today </h2>
+            </div>
+            <input type='text', value='', placeholder='Name', name='name', id="name" required>
+            <input type='text', value='', placeholder='E-mail', name='email', id="email" required>
+            <input type='text', value='', placeholder='phone', name='phone', id="phone" required>
+            <textarea  id="message" name="message" placeholder="Enter your message here" rows="5" id="message" required></textarea>
+            <button type="submit">Submit</button>
+        </fieldset>
 
+       </form>
 
+   </section>
+   
+   
+   
+   
+   
+   
+
+    
+    <!--
     <section id="contact">
         <form action="/contact" id="contact-form" method="post" role="form">
             <fieldset>
@@ -43,16 +114,19 @@
             </fieldset>
           </form>
     </section>
+-->
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-        </script>
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>    
+<script src="js/script.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/owl.carousel.min.js"></script>
 </body>
 </html>

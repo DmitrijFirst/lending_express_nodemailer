@@ -34,7 +34,7 @@ app.get('/contact', (req,res) => {
       from: 'Your sender info here', 
       to: 'testnodemailer5@gmail.com',
       subject: `Новый заказ от клиента ${req.body.name}`,
-      text: `${req.body.name} (${req.body.email})   
+      text: `${req.body.name} (${req.body.email}) ${req.body.phone}  
       says: ${req.body.message}`
     }
   
