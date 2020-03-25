@@ -4,39 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/callback_btn.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Nodemailer</title>
 </head>
 <body>
     <section class="nav">
         <div class="topnav" id="myTopnav">
-            <a href="#" class="navbar-brand">Known</a>
+            <a  class="navbar-brand">Known</a>
             <a href="#home" >Главная</a>
             <a href="#feature">Гарантии</a>
-            <a href="#about">О нас</a>
+            <a href="#info">О нас</a>
             <a href="#contact">Контакты</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
-        </div>
+            <div class="ring-container">
+                <div class="ringring"></div>
+                    <img src="img/phone.png" class="circle">
+                    <p class="phone">+38 050 000 00 00</p>
+                </div>
+            </div>
     </section>
     <!-----------------------------------------------Slider------------------------------------------------------------------------->
     <section id="home">
         <div class="carousel">
             <div class="slides">
                 <div class="slide img1">
-                    
-                    <img src="https://picsum.photos/1280/720?random=1" alt="slide image" >
                     <span id="mountin">Путешествия в горы</span>
+                    <img src="https://picsum.photos/1280/720?random=1" alt="slide image" >
                 </div>
                 <div class="slide img2">
                     <span id="europe">Путешествия в по Европе</span>
                     <img src="https://picsum.photos/1280/720?random=2" alt="slide image" >
-                    
                 </div>
                 <div class="slide img3">
-                    <img src="https://picsum.photos/1280/720?random=3" alt="slide image" >
                     <span id="azia">Путешествия в по Азии</span>
+                    <img src="https://picsum.photos/1280/720?random=3" alt="slide image" >
                 </div>
             </div>
             <div class="controls">
@@ -71,6 +75,12 @@
    </section>
 
     <!------------------------------------------------------------------------------------------------------------------------------>
+   <section id="info">
+
+   </section>
+
+
+<!------------------------------------------------------------------------------------------------------------------------------>
    <section class="section-form" id="contact">
        <form action="/contact" id="contact-form" method="post" role="form">
         <fieldset>
@@ -84,43 +94,21 @@
             <textarea  id="message" name="message" placeholder="Enter your message here" rows="5" id="message" required></textarea>
             <button type="submit">Submit</button>
         </fieldset>
-
        </form>
-
    </section>
-   
-   
-   
-   
-   
-   
+<!------------------------------------------------------------------------------------------------------------------------------>
 
+
+   <footer>
+
+   </footer>
+   
+   
+   
+   
+   
+<!------------------------------------------------------------------------------------------------------------------------------>
     
-    <!--
-    <section id="contact">
-        <form action="/contact" id="contact-form" method="post" role="form">
-            <fieldset>
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" placeholder="Your name" required>
-          
-              <label for="email">Email</label>
-              <input id="email" name="email" type="text" placeholder="Your email" required>
-          
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Enter your message here" rows="3" required>
-              </textarea>
-          
-              <button type="submit">Submit</button>
-            </fieldset>
-          </form>
-    </section>
--->
-
-
-
-
-
-
 
 
 

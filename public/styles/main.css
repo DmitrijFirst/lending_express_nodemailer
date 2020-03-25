@@ -1,6 +1,7 @@
 body { 
 margin: 0;
 padding: 0;
+
 }
 
 
@@ -22,7 +23,7 @@ padding: 0;
     box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     height: 60px;
-    
+    width: 100%;
 }
 
 /* Стиль ссылок внутри панели навигации */
@@ -63,7 +64,9 @@ a:active {
 /*####################################################Slider####################################################################*/
 
 #home{
-    margin-top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -77,70 +80,61 @@ a:active {
   
   
 }
-  .carousel:hover .controls {
-    opacity: 1;
-  }
+.carousel:hover .controls {
+  opacity: 1;
+}
   
-  .controls {
-    opacity: 0;
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    justify-content: space-between;
-    width: 100%;
-    z-index: 99999;
-    transition: all ease 0.5s;
-  }
-    .control {
-      margin: 0 5px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 40px;
-      width: 40px;
-      border-radius: 50%;
-      background-color: rgba(255, 255, 255, 0.7);
-      opacity: .5;
-      transition: ease .5s;
-      cursor: pointer;
-    }  
-    .control:hover {
-        opacity: 1;
-      }
+.controls {
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 99999;
+  transition: all ease 0.5s;
+}
+.control {
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: .5;
+  transition: ease .5s;
+  cursor: pointer;
+}  
+.control:hover {
+  opacity: 1;
+}
     
   
   
-    .slides {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-      display: flex;
-      width: 100%;
-      transition: 1s ease-in-out all;
-    }  
-    .slide {
-        min-width: 100%;
-        min-height: 300px;
-        height: auto;
-        
-        
-      }
+.slides {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  display: flex;
+  width: 100%;
+  transition: 1s ease-in-out all;
+}  
+.slide {
+  min-width: 100%;
+  min-height: 300px;
+  height: auto;
+}
     
-      .slide img {
-          width: 100%;
-          opacity: 0.8;
-      }
+.slide img {
+  width: 100%;
+  opacity: 0.8;
+}
 
-      .img1  #mountin,
-      .img2  #europe{
-       position: absolute;
-       color: black;
-       font-size: 24px;
-       top: 50%;
-       left: 60px;
-      }
+
 /*########################################################################################################################*/
 #feature {
     width: 100%;
@@ -149,11 +143,12 @@ a:active {
 }
 
 .content {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10%;
-    margin-left: 7%;
-    margin-right: 7%;
+  
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 .feature-thumb {
@@ -169,7 +164,7 @@ a:active {
 }
 
 .feature-thumb  span {
-    background: #3f51b5;
+    background: #4a97f0;
     border-radius: 50px;
     color: #ffffff;
     font-size: 25px;
@@ -196,9 +191,10 @@ a:active {
 
 /*########################################################################################################################*/
 #contact {
-    width: 100%;
+    
     height: 600px;
     font-family: 'Lato', sans-serif;
+    
 }
 
 
@@ -209,9 +205,8 @@ form {
 
 
 .section-form {
-  width: 30%;
-  margin: 1em auto;
-  background-color: #f3efe7;
+  background: #f3efe7;
+  
   padding: 1em;
   font-size: 1.6em;
 }
@@ -262,8 +257,13 @@ fieldset {
     width: 100%;
 }
 
-
-
+/*########################################################################################################################*/
+ #info{
+  
+  height: 600px;
+  font-family: 'Lato', sans-serif;
+  
+ }
 
 
 
@@ -277,6 +277,11 @@ fieldset {
 
 
 /*########################################################################################################################*/
+footer {
+  height: 300px;
+  margin:0;
+  background: rgb(39, 39, 39);
+}
 
 
 
