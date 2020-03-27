@@ -38,13 +38,13 @@ padding: 0;
 }
 
 /* цвет ссылок при наведении */
-.topnav a:hover:not(.navbar-brand) {
+.topnav a:hover:not(.navbar-brand):not(.img_phone):not(.phone) {
     background-color: rgb(236, 234, 234);
     color: black;
 }
 
 /* активный */
-a:active {
+a:active:not(.img_phone):not(.phone) {
     background-color: rgb(128, 188, 238);
     color: rgb(39, 39, 39);
 }
@@ -112,6 +112,15 @@ a:active {
   opacity: 1;
 }
     
+.prev-slide span {
+  position: relative;
+  right: 5%;
+}
+
+.next-slide span {
+  position: relative;
+  left: 5%;
+}
   
   
 .slides {
@@ -131,7 +140,71 @@ a:active {
     
 .slide img {
   width: 100%;
-  opacity: 0.8;
+  
+}
+
+.img_text {
+  position: absolute;
+  width: 40%;
+  height: 300px;
+  z-index: 9999;
+  top: 30%;
+  margin-left: 3%;
+  
+}
+
+.slider_text h1 {
+  color: #ffffff;
+  font-size: 3em;
+  line-height: normal;
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+
+.slider_text h3 {
+  color: #f9f9f9;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+  padding: 5px 0 40px 0;
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+}
+
+.section-btn {
+  width: 10%;
+  background: transparent;
+  border-radius: 50px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: inherit;
+  font-weight: normal;
+  padding: 15px 30px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.section-btn:hover {
+  background: rgb(194, 193, 193);
+  color: #1a1919;
+}
+
+.section-btn:focus {
+  color: #16a085;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
 }
 
 
@@ -143,7 +216,6 @@ a:active {
 }
 
 .content {
-  
   display: flex;
   justify-content: space-between;
   margin-top: 10%;
@@ -288,7 +360,7 @@ footer {
 
 
 
-/* Если ширина экрана меньше 600 пикселей, скрыть все ссылки, кроме первой («Домой»). Показать ссылку, которая должна открывать и закрывать topnav (.icon) */
+/* Если ширина экрана меньше 600 пикселей, скрыть все ссылки, кроме первой . Показать ссылку, которая должна открывать и закрывать topnav (.icon) */
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -297,7 +369,8 @@ footer {
     }
   }
   
-  /* Класс «отзывчивый» добавляется в topnav с помощью JavaScript, когда пользователь нажимает на значок. Этот класс делает topnav хорошо выглядеть на маленьких экранах (отображать ссылки вертикально, а не горизонтально) */
+  /* Класс «отзывчивый» добавляется в topnav с помощью JavaScript, когда пользователь нажимает на значок.
+   Этот класс делает topnav хорошо выглядеть на маленьких экранах (отображать ссылки вертикально, а не горизонтально) */
   @media screen and (max-width: 600px) {
     .topnav.responsive {
         position: relative;

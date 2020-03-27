@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/modal.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/callback_btn.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,35 +22,61 @@
             </a>
             <div class="ring-container">
                 <div class="ringring"></div>
-                    <img src="img/phone.png" class="circle">
-                    <p class="phone">+38 050 000 00 00</p>
+                    <a class="img_phone modal-show" href="#modal"><img src="img/phone.png" class="circle"></a>
+                    <a class="phone">+38 050 000 00 00</a>
                 </div>
             </div>
+    </section>
+     <!-----------------------------------------------Modal------------------------------------------------------------------------->
+    <section>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+             <a class="modal-hide" href="#" >✕</a>
+           </div>
+        </div>
     </section>
     <!-----------------------------------------------Slider------------------------------------------------------------------------->
     <section id="home">
         <div class="carousel">
             <div class="slides">
-                <div class="slide img1">
-                    <span id="mountin">Путешествия в горы</span>
+                <div class="slide ">
+                    <div class="img_text">
+                        <div class="slider_text">
+                            <h1>Start your journey with our practical courses</h1>
+                            <h3>Our online courses are built in partnership with technology leaders and are designed to meet industry demands.</h3>
+                            <a href="#contact" class="section-btn btn">Click</a>
+                        </div>
+                    </div>
                     <img src="https://picsum.photos/1280/720?random=1" alt="slide image" >
                 </div>
-                <div class="slide img2">
-                    <span id="europe">Путешествия в по Европе</span>
+                <div class="slide">
+                    <div class="img_text">
+                        <div class="slider_text">
+                            <h1>Efficient Learning Methods</h1>
+                            <h3>Nam eget sapien vel nibh euismod vulputate in vel nibh. Quisque eu ex eu urna venenatis sollicitudin ut at libero. Visit </h3>
+                            <a href="#contact" class="section-btn btn">Click</a>
+                        </div>
+                    </div>
                     <img src="https://picsum.photos/1280/720?random=2" alt="slide image" >
                 </div>
-                <div class="slide img3">
-                    <span id="azia">Путешествия в по Азии</span>
+                <div class="slide">
+                    <div class="img_text">
+                        <div class="slider_text">
+                            <h1>Distance Learning Education Center</h1>
+                            <h3>Our online courses are designed to fit in your industry supporting all-round with latest technologies.</h3>
+                            <a href="#contact" class="section-btn btn">Click</a>
+                        </div>
+                    </div>
                     <img src="https://picsum.photos/1280/720?random=3" alt="slide image" >
                 </div>
             </div>
             <div class="controls">
-              <div class="control prev-slide">&#9668;</div>
-              <div class="control next-slide">&#9658;</div>
+              <div class="control prev-slide"><span>&#9668;</span></div>
+              <div class="control next-slide"><span>&#9658;</span></div>
             </div>
           </div>
     </section>
-    <!-----------------------------------------------Slider------------------------------------------------------------------------->
+    <!------------------------------------------------------------------------------------------------------------------------>
 
     <!-- FEATURE -->
     <section id="feature">
@@ -78,8 +105,6 @@
    <section id="info">
 
    </section>
-
-
 <!------------------------------------------------------------------------------------------------------------------------------>
    <section class="section-form" id="contact">
        <form action="/contact" id="contact-form" method="post" role="form">
@@ -97,16 +122,9 @@
        </form>
    </section>
 <!------------------------------------------------------------------------------------------------------------------------------>
-
-
    <footer>
 
-   </footer>
-   
-   
-   
-   
-   
+   </footer>  
 <!------------------------------------------------------------------------------------------------------------------------------>
     
 
@@ -115,6 +133,5 @@
 <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>    
 <script src="js/script.js"></script>
 <script src="js/jquery.js"></script>
-<script src="js/owl.carousel.min.js"></script>
 </body>
 </html>
