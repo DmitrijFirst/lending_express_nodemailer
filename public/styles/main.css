@@ -212,7 +212,7 @@ a:active:not(.img_phone):not(.phone) {
 #feature {
     width: 100%;
     height: 650px;
-    background-color: rgba(255, 255, 255, 0.7);
+    
 }
 
 .content {
@@ -263,89 +263,216 @@ a:active:not(.img_phone):not(.phone) {
 
 /*########################################################################################################################*/
 #contact {
-    
+    display: flex;
     height: 600px;
     font-family: 'Lato', sans-serif;
     
 }
 
-
-
-form {
-    width: 30%;
+.form_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 5%;
+  margin-top: 5%;
 }
+
 
 
 .section-form {
-  background: #f3efe7;
-  
   padding: 1em;
   font-size: 1.6em;
 }
-  .intro {
-    margin-bottom: 0.8em;
-  }
-  
-  h1 {
-    text-align: center;
-    font-size: 1em;
-    margin-bottom: 0.2em;
-  }
-  
-  h2 {
-    text-align: center;
-    font-size: 0.8em;
-  } 
 
-
-input[type=text] {
-  height: 20px; 
+form {
+  font-family: 'roboto', sans-serif;
+  width: 100%;
+  height: 400px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+  padding: 0 0 40px;
+  border-radius: 3px;
+  color: #555;
 }
-
-input[type=text], textarea {
-  width: 80%;
-  margin-bottom: 1em;
-  margin: 15px;
-  font-size: .8em;
-  color:#cfcece;
-  padding: .5em ;
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font: inherit;
+  transition: transform 0.3s ease-in-out, font-size 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+input, textarea {
+  font: inherit;
+  font-size: 0.8em;
+  margin: 28px 25px 10px;
+  width: 400px;
+  display: block;
   border: none;
-  color: #555555;
-  
+  padding: 20px 0 10px;
+  border-bottom: solid 1px #03a9f4;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #03a9f4 4%);
+  background-position: -400px 0;
+  background-size: 400px 100%;
+  background-repeat: no-repeat;
+  transition: background 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  resize: none;
+  overflow: hidden;
+}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #03a9f4;
+}
+input:focus, textarea:focus, input:valid, textarea:valid {
+  box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder, input:valid::-webkit-input-placeholder, textarea:valid::-webkit-input-placeholder {
+  font-size: 0.8em;
+  transform: translateY(-20px);
+  visibility: visible !important;
+  opacity: 1;
+}
+input[type="email"] {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #03a9f4 4%);
+  background-position: -400px 0;
+  background-repeat: no-repeat;
+  transition: border-bottom 0.3s ease, background 0.3s ease;
+}
+input[type="email"] ~ span.validation-text {
+  position: absolute;
+  visibility: hidden;
+  font-family: 'roboto', sans-serif;
+  font-size: 0.6em;
+  width: 400px;
+  margin-left: 25px;
+  margin-top: -5px;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+input[type="email"]:not([value=""])::-webkit-input-placeholder {
+  font-size: 0.8em;
+  transform: translateY(-20px);
+  visibility: visible !important;
+  opacity: 1;
+}
+input[type="email"]:not([value=""]):focus::-webkit-input-placeholder {
+  color: #03a9f4;
+}
+input[type="email"]:not([value=""]):focus:not(:valid)::-webkit-input-placeholder {
+  color: #e91e63;
+}
+input[type="email"]:focus {
+  background-position: 0 0;
+}
+input[type="email"]:focus:not(:valid):not([value=""]) {
+  border-bottom: solid 1px #e91e63;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #e91e63 4%);
+}
+input[type="email"]:not(:focus):not(:valid):not([value=""]) {
+  border-bottom: solid 1px #e91e63;
+  background-position: 0 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #e91e63 4%);
+}
+input[type="email"]:not(:focus):not(:valid):not([value=""])::-webkit-input-placeholder {
+  color: #e91e63;
+}
+input[type="email"]:not(:focus):not(:valid):not([value=""]) ~ span.validation-text {
+  visibility: visible;
+  color: #e91e63;
+}
+.flex {
+  display: flex;
+  align-items: stretch;
+}
+.flex textarea {
+  line-height: 120%;
 }
 
-input[type=button] {
+.button {
+  display: flex;
+  justify-content: center;
+}
+button {
+  font-family: 'roboto', sans-serif;
+  font-size: medium;
+  transition: transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), box-shadow 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
+  border: none;
+  background: #03a9f4;
   cursor: pointer;
-  margin: 0;
-  padding: .5em 2em;
-  background: #636363;
-  border: none;
-  color: #fff;
-  font-size: 1em;
-  font-weight: 400;
+  border-radius: 3px;
+  padding: 6px;
+  width: 30%;
+  color: white;
+  margin: 30px 0 0 25px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
-fieldset {
-    width: 100%;
-}
+
+
 
 /*########################################################################################################################*/
  #info{
-  
-  height: 600px;
   font-family: 'Lato', sans-serif;
-  
+  background-color: rgba(233, 231, 231, 0.7);
+  padding-bottom: 10%;
+ }
+
+ .teaching_photo {
+   display: flex;
+   justify-content: flex-end;
+   width: 50%;
+   margin-right: 5%;
+   margin-top: 5%;
+
+ }
+
+ .teaching_content {
+  display: flex;
+  justify-content: start;
+  width: 40%;
+  margin-top: 15%;
+  margin-left: 5%;
+ }
+
+ .teaching {
+  display: flex;
+  justify-content: space-between;
  }
 
 
+.title{
+  font-size: 1em;
+  font-weight: 700;
+  color: #454545;
+  padding: 0;
+  border: none;
+  margin: .437em 0;
+}
 
+.description {
+  color: #757575;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 24px;
+  width: 80%;
 
+}
+/*##################################################*/
+.testing {
+  display: flex;
+  justify-content: space-between;
+}
 
+.testing_content {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15%;
+  margin-left: 5%;
+}
 
-
-
-
-
+.text_content_testing {
+  margin-left: 10%;
+  margin-top: 10%;
+}
 
 
 /*########################################################################################################################*/

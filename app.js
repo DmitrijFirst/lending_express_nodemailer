@@ -53,10 +53,3 @@ app.get('/contact', (req,res) => {
 app.listen(3000, () => {
     console.log('server start port 3000')
 })
-
-
-  /*
-
-  
-  
-  */

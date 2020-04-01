@@ -85,17 +85,17 @@
                        <div class="feature-thumb">
                             <span>01</span>
                             <h3>Trending Courses</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing eiusmod tempor incididunt ut labore et dolore magna.</p>
+                            <p>Корпоративное обучение (Corporate English)</p>
                        </div>
                        <div class="feature-thumb">
                             <span>02</span>
                             <h3>Books & Library</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing eiusmod tempor incididunt ut labore et dolore magna.</p>
+                            <p>Курсы бизнес английского (Business English)</p>
                        </div>
                        <div class="feature-thumb">
                             <span>03</span>
                             <h3>Certified Teachers</h3>
-                            <p>templatemo delivers a wide variety of HTML5 templates for you at absolutely no charge. Please tell your friends.</p>
+                            <p>Подготовка к сдаче международных экзаменов (IELTS, TOEFL, CAE, FCE и др.)</p>
                        </div>
                     </div>  
         </div>
@@ -103,24 +103,77 @@
 
     <!------------------------------------------------------------------------------------------------------------------------------>
    <section id="info">
-
+    <div class="teaching">
+        <div class="teaching_content">
+            <div class="text_content">
+                <h3 class="title">Вместе мы вдохновляем учеников идти дальше</h3>
+                <p class="description">Наш ассортимент бесплатных учебных материалов, планов уроков и мероприятий призван помочь.
+                   Вы готовите своих студентов к нашим экзаменам и тестам.
+                   У нас также есть ряд педагогических квалификаций, курсов и поддержки, которые помогут вам развиваться как учителю.</p>
+            </div>
+        </div>
+        <div class="teaching_photo">
+            <img src="./img/ap2.jpg">
+        </div>
+    </div>
+    </div>
+    <div class="testing">
+        <div class="testing_content">
+            <div class="testing_photo">
+                <img src="img/ap3 copy.jpg">
+            </div>   
+            <div class="text_content_testing">
+                <h3 class="title">Онлайн тестирование по английскому, упрощенное</h3>
+                <p class="description">Linguaskill - это быстрый и удобный онлайн-тест, 
+                    помогающий высшим учебным заведениям и работодателям проверять уровень владения английским 
+                    языком у отдельных лиц и групп кандидатов. Он сочетает в себе новейшие технологии с надежностью и качеством, 
+                    которые вы ожидаете от Кембриджа..</p>
+            </div>
+        </div>
+    </div>
    </section>
 <!------------------------------------------------------------------------------------------------------------------------------>
    <section class="section-form" id="contact">
-       <form action="/contact" id="contact-form" method="post" role="form">
-        <fieldset>
-            <div class="intro">
-                <h1> Ready to go? </h1>
-                <h2> Get your project started today </h2>
+       <div class="form_container">
+        <form action="/contact" id="contact-form" method="post" role="form">
+            <input placeholder="Имя" type="text"  value="" id="name"  onblur="this.setAttribute('value', this.value)" required>
+            <input placeholder="Email адрес" type="email" id="email" value="" onblur="this.setAttribute('value', this.value)" required>
+            <span class="validation-text">Please enter a valid email address.</span>
+            <input placeholder="Ваш телефон" type="text" value="" id="phone"  onblur="this.setAttribute('value', this.value)" required>
+            <span class="validation-text">Please enter a valid email address.</span>
+            <div class="flex">
+                <textarea placeholder="Message" rows="1" id="message"  onblur="this.setAttribute('value', this.value)" required></textarea>
             </div>
-            <input type='text', value='', placeholder='Name', name='name', id="name" required>
-            <input type='text', value='', placeholder='E-mail', name='email', id="email" required>
-            <input type='text', value='', placeholder='phone', name='phone', id="phone" required>
-            <textarea  id="message" name="message" placeholder="Enter your message here" rows="5" id="message" required></textarea>
-            <button type="submit">Submit</button>
-        </fieldset>
-       </form>
+            <div class="button">
+                <button>Send</button>
+            </div>
+            
+       </div>
+       <div class="">
+           <img src="">
+       </div>
+
+
    </section>
+
+<!--
+<form>
+  
+  <input placeholder="Name" type="text"  value="" required>
+  <input placeholder="Email address" type="email" onblur="this.setAttribute('value', this.value);" value="" required>
+  <span class="validation-text">Please enter a valid email address.</span>
+  <input placeholder="Location" type="text" value="" required>
+  <div class="flex">
+    <textarea placeholder="Message" rows="1" required></textarea>
+  </div>
+  <button>Send</button>
+</form>
+
+
+-->
+
+
+
 <!------------------------------------------------------------------------------------------------------------------------------>
    <footer>
 
